@@ -1,0 +1,47 @@
+
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				background: #012E4C;
+			}
+			
+			#bor {
+				width: 200px;
+				height: 10px;
+				border-radius: 10px;
+				border: 1px solid darkturquoise;
+				position: absolute;
+				left: 40px;
+			}
+			
+			#move {
+				width: 0px;
+				height: 10px;
+				border-radius: 10px;
+				background: #09a3df;
+				position: absolute;
+			}
+			
+			/*#bor:hover #move {
+				transition: 5s;
+				width: 300px;
+			}*/
+			#content{position: absolute;top: 18%;
+				left: 42%;text-align: center;}
+			#content p{margin-top: 20px;color: #00BFFF;font-size: 20px;}
+		#content a{
+			display: block;
+			width: 316px;
+			height: 97px;
+			background: url(../img/ia_100000103.png);
+		
+			background-position: -363px -1800px;
+			display: none;
+		}
+		#content a:hover{
+				background-position: -1374px -1523px;
+		}
+		

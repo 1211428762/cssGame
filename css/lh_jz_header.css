@@ -1,0 +1,902 @@
+html,
+body {
+	width: 100%;
+	min-width: 1260px;
+	height: auto;
+	font-family: "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body,
+ul li,
+ol li,
+span,
+a {
+	font-size: 14px;
+	font-family: 微软雅黑;
+	list-style-type: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+em {
+	font-style: normal;
+	font-size: 12px;
+}
+
+#NIE-topBar-news {
+	position: absolute;
+	z-index: 13;
+	width: 420px;
+	left: 180px;
+	padding-top: 0;
+	overflow: hidden;
+	height: 54px;
+	display: block;
+}
+
+#NIE-topBar-news span {
+	font-size: 12px;
+	font-style: normal;
+}
+
+#NIE-topBar-news span .NIE-topBar-abc-s {
+	border: 0;
+	font-size: 12px;
+	font-style: normal;
+}
+
+#NIE-topBar-news span a {
+	line-height: 24px;
+	width: 960px;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	z-index: 2;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	color: #626262;
+}
+
+#NIE-topBar-news-link {
+	position: absolute;
+	top: 55px;
+}
+
+#NIE-topBar-news span a #NIE-topBar-abc-b {
+	border: 0;
+	font-size: 12px;
+	font-style: normal;
+}
+
+#NIE-topBar-news span #NIE-topBar-news-close {
+	position: absolute;
+	top: 63px;
+	right: -380px;
+	display: block;
+	width: 32px;
+	height: 32px;
+	overflow: hidden;
+	background: url(../img/ia_200000097.png) no-repeat -9999px -9999px;
+	text-indent: -9999px;
+	z-index: 2;
+}
+
+.header_recommend {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 129px;
+	height: 54px;
+	overflow: hidden;
+	border-left: 1px solid #dadada;
+}
+
+.header_recommend a {
+	color: #626262;
+	display: block;
+	width: 100%;
+	height: 54px;
+	line-height: 54px;
+	text-align: center;
+	font-size: 12px;
+}
+
+.header_recommend a i {
+	display: inline-block;
+	width: 17px;
+	height: 20px;
+	background: url(../img/ia_200000097.png) -81px -343px no-repeat;
+	position: relative;
+	top: 5px;
+	margin-right: 10px;
+}
+
+.clear {
+	clear: both;
+}
+
+.public-top {
+	width: 100%;
+	min-width: 1260px;
+	height: 55px;
+	background: #fff;
+}
+
+.top-main {
+	position: relative;
+	z-index: 9999;
+	width: 100%;
+	height: 54px;
+	margin: auto;
+}
+
+.top-bottom {
+	display: block;
+	width: 100%;
+	height: 0px;
+	overflow: hidden;
+	border-bottom: 1px solid #d8d8d8;
+}
+
+.menu-btn {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 179px;
+	height: 54px;
+	overflow: hidden;
+	background-color: #cf1132;
+	color: #fff!important;
+	font-size: 12px;
+	cursor: default;
+	text-align: center;
+	line-height: 54px;
+}
+
+.menu-btn:hover {
+	background-color: #ce2845;
+}
+
+.menu-btn i {
+	display: inline-block;
+	width: 25px;
+	height: 11px;
+	background: url(../img/ia_200000097.png) -90px -306px no-repeat;
+	margin-right: 8px;
+	font-style: normal;
+}
+
+.top-logo {
+	width: 133px;
+	height: 44px;
+	display: inline-block;
+	margin-top: 6px;
+	background: url(../img/ia_200000021.png) no-repeat;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	margin-top: 5px;
+}
+
+.top-right {
+	position: absolute;
+	right: 129px;
+	top: 0;
+	display: block;
+	width: 138px;
+	height: 54px;
+	overflow: hidden;
+	z-index: 9;
+	border-left: 1px solid #dadada;
+	transition: all ease-in-out .5s;
+}
+
+.top-right a {
+	text-decoration: none;
+	font-size: 12px;
+	font-style: normal;
+	color: #333!important;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	line-height: 52px;
+	transform: translate3d(0, 70%, 0);
+	opacity: 0;
+}
+
+.top-right .fade {
+	opacity: 0;
+	transform: translate3d(0, -70%, 0);
+	transition: all ease-in-out .5s;
+}
+
+.top-right .fade2 {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+	transition: all ease-in-out .5s;
+}
+
+.top-right a:hover {
+	color: #bc2e2e!important;
+	border-bottom: 1px solid #bc2e2e;
+	background-color: #F3F3F3;
+	background-image: -webkit-linear-gradient(top, #F3F3F3 0, #FEFEFE 52px);
+}
+
+#topBar-menu {
+	position: absolute;
+	z-index: 1;
+	top: 55px;
+	left: 0;
+	color: #999;
+	background-color: #fff;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	transition: height .3s ease 0s;
+}
+
+.main-menu-list {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	border-collapse: collapse;
+	overflow: hidden;
+	width: 1280px;
+	top: 0;
+	background: #fdfefe;
+	border-top: 1px solid #ececec;
+	margin: 0 0 0 -630px;
+}
+
+.main-menu-list .list-nav {
+	position: relative;
+	width: 100%;
+	float: left;
+}
+
+.main-menu-list .list-nav li {
+	float: left;
+	font-size: 12px;
+	border-right: 1px solid #eee;
+	vertical-align: top;
+}
+
+.main-menu-list b {
+	line-height: 39px;
+	color: #bc2e2e;
+	display: block;
+	width: 100%;
+	height: 39px;
+	font-size: 14px;
+	text-indent: 20px;
+	background: #f7f7f8;
+	overflow: hidden;
+	clear: both;
+	font-weight: bold;
+}
+
+.main-menu-list .list-list {
+	float: left;
+	overflow: hidden;
+	width: 100%;
+	height: 445px;
+}
+
+.main-menu-list .list-list li {
+	height: 435px;
+	float: left;
+	padding: 10px 0 0 14px;
+	overflow: hidden;
+	font-size: 12px;
+}
+
+.main-menu-list p {
+	padding: 0;
+	margin: 0;
+	margin-left: 6px;
+	line-height: 24px;
+	margin-bottom: 4px;
+	font-weight: 700;
+	color: #626262;
+}
+
+.main-menu-list a {
+	width: 115px;
+	margin-left: 6px;
+	line-height: 24px;
+	display: inline-block;
+	font-weight: 400;
+	text-align: left;
+	color: #626262;
+	text-decoration: none;
+}
+
+.main-menu-list a em {
+	font-weight: 400;
+	display: block;
+	line-height: 24px;
+	text-align: left;
+}
+
+.main-menu-list .top-1st {
+	background: url(../img/ia_200000097.png) no-repeat;
+	background-position: right -267px;
+	font-size: 12px;
+	font-style: normal;
+}
+
+.main-menu-list .top-hot {
+	background: url(../img/ia_200000097.png) no-repeat;
+	background-position: right -144px;
+	font-size: 12px;
+	font-style: normal;
+}
+
+.main-menu-list .top-new {
+	background: url(../img/ia_200000097.png) no-repeat;
+	background-position: right -206px;
+	font-size: 12px;
+	font-style: normal;
+}
+
+.main-menu-list .top-more {
+	width: 20px!important;
+	height: 95px;
+	height: 92px\9;
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 124px;
+	font-size: 12px;
+	color: #fff;
+	background: #bc2e2e;
+	padding-left: 10px;
+	line-height: 14px;
+	padding-top: 7px;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+	text-align: left;
+	font-size: 12px;
+	font-style: normal;
+}
+
+.main-menu-list .list-list .hot {
+	position: absolute;
+	background: #fdfefe;
+	left: 300px;
+	top: 39px;
+	z-index: 3;
+	font-size: 12px;
+	font-style: normal;
+}
+
+.main-menu-list .list-list .news {
+	position: absolute;
+	background: #fdfefe;
+	left: 446px;
+	top: 39px;
+	border: 0;
+	font-size: 12px;
+	font-style: normal;
+}
+
+.main-menu-list .list-list .news .long-news {
+	width: 135px;
+	float: left;
+	font-size: 12px;
+	font-style: normal;
+}
+
+.main-menu-list .list-list .news .short-news {
+	float: left;
+	width: 106px;
+}
+
+.main-menu-list .list-list .news .short-news a {
+	font-size: 12px;
+	font-style: normal;
+}
+
+.main-menu-list .list-list .news .short-news a em {
+	font-size: 12px;
+	font-style: normal;
+}
+
+.main-menu-list .list-list a:hover {
+	color: #bc2e2e;
+}
+
+.NIE-topBar-btn {
+	width: 106px;
+	height: 35px;
+	display: block;
+	background-position: 50% 50%;
+	background: url(../img/jz_Images/ia_200000021.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.line {
+	width: 100%;
+	height: 1px;
+	background-color: #ce2845;
+	position: absolute;
+	bottom: 1px;
+	display: none;
+}
+
+#li2:hover .line {
+	display: block;
+}
+
+#li2 {
+	width: 128px;
+	height: 100%;
+	font-size: 12px;
+	color: #626262;
+	border-left: 1px solid #dadada;
+	position: absolute;
+	right: 0;
+	top: 0;
+	line-height: 54px;
+}
+
+#li2:hover {
+	color: #cf1132;
+}
+
+#li2:hover #ico1 {
+	background-position: -98px -342px;
+}
+
+#ico1 {
+	width: 17px;
+	height: 22px;
+	margin: 17px 10px 0 27px;
+	background: url(../img/ia_200000097.png);
+	background-position: -81px -342px;
+	float: left;
+}
+
+#ico2 {
+	width: 23px;
+	height: 23px;
+	border: 0px solid red;
+	float: left;
+	background: url(../img/2.png);
+	margin: 13px 0 0 22px;
+	display: none;
+}
+
+#p1 {
+	width: 100%;
+	background: rgb(255, 255, 255);
+	height: 0px;
+	position: absolute;
+	top: 54px;
+	left: 0;
+	z-index: 4;
+	overflow: hidden;
+}
+
+.pp {
+	width: 100%;
+	height: 100%;
+	background: rgb(255, 255, 255);
+	position: relative;
+}
+
+.imgs {
+	width: 1200px;
+	height: 245px;
+	float: left;
+	margin: 30px 0 0 121px;
+	border: 0px solid red;
+}
+
+.img-1 {
+	width: 172px;
+	height: 243px;
+	float: left;
+	margin-right: 15px;
+	position: relative;
+}
+
+.img-1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.box1 {
+	width: 100%;
+	height: 58px;
+	background: rgba(207, 17, 50, .8);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.box1 .l1 {
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	float: left;
+	width: 100%;
+	height: 15px;
+	margin: 12px 0 0 0;
+}
+
+.box1 .l2 {
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	float: left;
+	width: 100%;
+	height: 15px;
+	margin: 6px 0 0 0;
+}
+
+.p1-p {
+	width: 630px;
+	height: 18px;
+	border-left: 1px solid #d42846;
+	float: left;
+	margin: 20px 0 0 120px;
+}
+
+.p1-p ul li {
+	float: left;
+	list-style-type: none;
+	margin-right: 10px;
+	line-height: 18px;
+}
+
+.p1-p ul li a {
+	color: #959595;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.p1-p1 {
+	color: #d42846;
+	font-size: 12px;
+	margin-left: 5px;
+}
+
+.p1-button {
+	width: 679px;
+	height: 34px;
+	float: left;
+	margin: 12px 0 0 454px;
+	border: 0px solid red;
+}
+
+.button1 {
+	width: 118px;
+	height: 34px;
+	float: left;
+	margin-right: 40px;
+	border: 1px solid #cbcbcb;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.button1 img {
+	float: left;
+	margin: 10px 0 0 20px;
+}
+
+.button-p {
+	font-size: 12px;
+	float: left;
+	margin: 8px 0 0 5px;
+	color: #959595;
+}
+
+.p1-p ul li a:hover {
+	color: #d42846;
+}
+
+.button-p:hover {
+	color: #d42846;
+}
+
+
+/*游戏目录全列表*/
+
+.NIE_topBar_menu {
+	position: absolute;
+	z-index: 10;
+	top: 55px;
+	left: 0;
+	color: #999;
+	background-color: white;
+	width: 100%;
+	height: 0px;
+	overflow: hidden;
+	transition: all .3s ease 0s;
+}
+
+.NIE_topBar_menu_hover {
+	height: 500px;
+	opacity: .95;
+	transition: height .4s ease 0s;
+}
+
+.NIE_topBar_menu .NIE_table {
+	top: 0;
+	left: 50%;
+	background: #fdfefe;
+	border-top: 1px solid #ececec;
+	margin: 0 0 0 -630px;
+	position: absolute;
+	border-collapse: collapse;
+	overflow: hidden;
+	width: 1260px;
+	display: none;
+}
+
+.NIE_topBar_menu .NIE_table {
+	color: #626262;
+}
+
+.NIE_topBar_menu_hover .NIE_table {
+	display: block;
+}
+
+.NIE_topBar_menu_hover .NIE_table .NIE_nav {
+	width: 100%;
+	position: relative;
+}
+
+.NIE_topBar_menu_hover .NIE_table * {
+	font-size: 12px;
+	font-family: normal;
+}
+
+.NIE_topBar_menu_hover .NIE_table ul {
+	float: left;
+}
+
+.NIE_table .NIE_nav li {
+	float: left;
+	border-right: 1px solid #EEEEEE;
+	vertical-align: top;
+	width: 110px;
+}
+
+.NIE_table .NIE_nav li p {
+	line-height: 39px;
+	color: #BC2E2E;
+	width: 100%;
+	height: 39px;
+	font-size: 14px;
+	text-indent: 20px;
+	background: #f7f7f8;
+	overflow: hidden;
+	clear: both;
+	font-weight: bold;
+}
+
+.NIE_table .NIE_nav .client {
+	width: 299px;
+}
+
+.NIE_table .NIE_nav .mobile {
+	position: absolute;
+	left: 300px;
+	transition: all .3s ease-out;
+	width: 828px;
+}
+
+.NIE_table .NIE_nav .game_assistant {
+	float: right;
+	width: 131px;
+}
+
+.NIE_table .NIE_list {
+	float: left;
+	overflow: hidden;
+	width: 100%;
+	height: 445px;
+}
+
+.NIE_table .NIE_list li {
+	border-right: 1px solid #EEEEEE;
+	height: 435px;
+	float: left;
+	padding: 10px 0 0 14px;
+	overflow: hidden;
+}
+
+.NIE_table .NIE_list p {
+	margin-left: 6px;
+	line-height: 24px;
+	margin-bottom: 4px;
+	font-weight: 700;
+	color: #626262;
+}
+
+.NIE_table .NIE_list a {
+	width: 115px;
+	margin-left: 6px;
+	line-height: 24px;
+	display: inline-block;
+	font-weight: 400;
+	text-align: left;
+	color: #666;
+}
+
+.NIE_table .NIE_list a em {
+	font-weight: 400;
+	display: block;
+	line-height: 24px;
+	text-align: left;
+	font-style: normal;
+}
+
+.NIE_list_no1 {
+	background: url(../img/ia_200000097.png) no-repeat;
+	background-position: right -267px
+}
+
+.NIE_list_hot {
+	background: url(../img/ia_200000097.png) no-repeat;
+	background-position: right -144px;
+}
+
+.NIE_list_new {
+	background: url(../img/ia_200000097.png) no-repeat;
+	background-position: right -206px;
+}
+
+.NIE_table .NIE_list .cosplay {
+	width: 121px;
+	border-right: 0;
+}
+
+.NIE_table .NIE_list .cosplay_add {
+	width: 121px;
+	border-right: 0;
+	margin-left: 20px;
+}
+
+.NIE_table .NIE_list .sportsAndArder {
+	width: 150px;
+	position: absolute;
+	left: 135px;
+	background-color: rgb(253, 254, 254);
+	z-index: 3;
+	transition: all .3s ease-out;
+}
+
+.NIE_table .NIE_list .sportsAndArder a {
+	width: 105px
+}
+
+.NIE_table .NIE_list .NIE_topBar_more {
+	width: 20px !important;
+	height: 95px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 124px;
+	font-size: 12px;
+	color: #fff;
+	background: #bc2e2e;
+	padding-left: 10px;
+	line-height: 14px;
+	padding-top: 7px;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+	text-align: left;
+}
+
+.NIE_table .NIE_list .open {
+	border-radius: 2px;
+	right: 9px;
+	top: 163px;
+	padding-left: 4px;
+	padding-top: 2px;
+	height: 20px;
+}
+
+.NIE_table .NIE_list .recommend_hot {
+	position: absolute;
+	background: #FDFEFE;
+	left: 300px;
+	transition: all .3s ease-out;
+	top: 39px;
+	z-index: 3;
+	width: 133px;
+}
+
+.NIE_table .NIE_list .new_products {
+	position: absolute;
+	background: #FDFEFE;
+	left: 446px;
+	transition: all .3s ease-out;
+	top: 39px;
+	border: 0;
+	width: 668px;
+}
+
+.NIE_table .NIE_list .new_products .long_new_products {
+	width: 133px;
+	float: left;
+}
+
+.NIE_table .NIE_list .new_products .long_new_products a {
+	width: 125px;
+}
+
+.NIE_table .NIE_list .new_products .short_new_products {
+	float: left;
+	width: 106px;
+}
+
+.NIE_topBar_menu .more_mobiel .recommend_hot {
+	left: 185px;
+	border-left: 1px solid #EEEEEE;
+	box-shadow: -1px 0 1px #EEEEEE;
+	transition: all .3s ease-out;
+}
+
+.NIE_topBar_menu .more_mobiel .new_products {
+	left: 334px;
+	width: 780px!important;
+	transition: all .3s ease-out;
+	z-index: 3;
+}
+
+.NIE_topBar_menu .more_mobiel .mobile {
+	left: 185px;
+	width: 942px!important;
+	border-left: 1px solid #EEEEEE;
+	box-shadow: -1px 0 1px #EEEEEE;
+	transition: all .3s ease-out;
+}
+
+.NIE_table a:hover {
+	color: #BC2E2E;
+}
+
+.NIE_table .NIE_list .NIE_assistant {
+	width: 117px;
+	border-right: 0;
+	float: right;
+	transition: all .3s ease-out;
+}
+
+.NIE_table .NIE_list .NIE_assistant a {
+	margin-left: 0;
+}
+
+.NIE_topBar_menu .NIE_table .NIE_list .NIE_assistant .NIE_topBar_btn {
+	width: 75px;
+	height: 18px;
+	line-height: 18px;
+	margin: 5px 0;
+	display: inline-block;
+	padding-left: 0;
+	background: url(../img/jz_Images/logo_b5525b7.png) no-repeat;
+	background-position: 0 -338px;
+	text-indent: 25px;
+	color: #bc3030;
+}

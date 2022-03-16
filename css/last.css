@@ -1,0 +1,969 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*背景图居中*/
+html {
+  overflow-x: hidden;
+}
+.mi {
+  background-position: 50% 0;
+}
+.content {
+  margin: 0 auto;
+  width: 1895px;
+  height: 5700px;
+  position: relative;
+  /*云模块*/
+  /*移动logo模块*/
+  /*首屏移动箭头模块*/
+  /*左下连接模块*/
+  /*飞机模块*/
+  /*大楼*/
+}
+.content .cloud {
+  overflow: hidden;
+  position: relative;
+  width: 1920px;
+  height: 2450px;
+  z-index: 2;
+  background: url(../img/ia_100000010.png) no-repeat;
+  background-position: 50% 0;
+}
+.content .cloud .cloud1 {
+  position: absolute;
+  width: 1809px;
+  height: 583px;
+  top: 205px;
+  z-index: 100;
+  background: url(../img/ia_100000013.png) no-repeat;
+  animation: cloudmove1 100s infinite linear;
+}
+.content .cloud .cloud2 {
+  position: absolute;
+  width: 1169px;
+  height: 951px;
+  right: 0px;
+  z-index: 50;
+  background: url(../img/ia_100000011.png) no-repeat;
+  animation: cloudmove2 80s infinite linear;
+}
+.content .lastlogo {
+  position: fixed;
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin-left: -251px;
+  margin-top: -186px;
+  width: 503px;
+  height: 352px;
+  z-index: 999;
+  background: url(../img/sprite-67e182_67e182af.png) no-repeat;
+  background-size: 2330px 2053px;
+  background-position: -1827px -356px;
+}
+.content .botarrow {
+  position: fixed;
+  left: 50%;
+  bottom: 50px;
+  z-index: 999;
+  width: 65px;
+  height: 49px;
+  background: url(../img/sprite-67e182_67e182af.png) no-repeat;
+  background-size: 2330px 2053px;
+  background-position: -2243px -712px;
+  animation: alternate infinite 1s ease-out arrowdown;
+}
+.content .skipa {
+  display: block;
+  position: fixed;
+  left: 0;
+  bottom: 100px;
+  width: 184px;
+  height: 46px;
+  z-index: 500;
+  background: url(../img/btn-yy-1_03d31d8f.png) no-repeat;
+}
+.content .skipa:hover {
+  background: url(../img/btn-yy-2_15c3c7c7.png) no-repeat;
+}
+.content .plane {
+  width: 661px;
+  height: 447px;
+  background: url(../img/ia_100000015.png) no-repeat;
+  position: absolute;
+  left: -661px;
+  top: 1200px;
+}
+.content .bulid {
+  position: absolute;
+  top: 850px;
+  left: 0;
+}
+.content .bulid .leftbuild {
+  position: absolute;
+  left: 0px;
+  top: 1528px;
+  /*   top: 605px;*/
+  z-index: 6;
+  width: 1920px;
+  height: 2527px;
+  background: url(../img/ia_100000017.png) no-repeat;
+  background-position: 50% 0;
+}
+.content .bulid .bird {
+  position: absolute;
+  left: 500px;
+  top: 500px;
+  width: 633px;
+  height: 754px;
+  background: url(../img/ia_100000020.png) no-repeat;
+  z-index: 5;
+}
+.content .bulid .flybird {
+  background: url(../img/ia_100000001923.png) no-repeat;
+}
+.content .bulid .rightbuild {
+  position: absolute;
+  left: 0px;
+  top: 2383px;
+  /*top: 1350px;*/
+  z-index: 7;
+  width: 1920px;
+  height: 2488px;
+  background: url(../img/ia_100000018.png) no-repeat;
+  background-position: 50% 0;
+}
+.content .bulid .midbuild {
+  position: absolute;
+  left: 45px;
+  top: 587px;
+  z-index: 4;
+  width: 1850px;
+  height: 2092px;
+  background: url(../img/ia_100000016.png) no-repeat;
+  background-position: 50% 0;
+}
+.content .brige {
+  position: absolute;
+  top: 2911px;
+  left: 0px;
+  z-index: 8;
+  width: 1920px;
+  height: 1146px;
+  background: url(../img/ia_100000023.png) no-repeat;
+  background-position: 50% 0;
+}
+.content .rubbish_g {
+  position: absolute;
+  width: 1920px;
+  /*top: 2420px;*/
+  top: 2600px;
+  left: 0;
+}
+.content .rubbish_g .rubbish {
+  z-index: 9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 4032px;
+  background: url(../img/ia_100000025.png) no-repeat;
+}
+.content .rubbish_g .float_iron {
+  position: absolute;
+  top: 1069px;
+  left: 278px;
+  z-index: 7;
+  width: 572px;
+  height: 240px;
+  animation: floatiron 2s infinite alternate;
+  background: url(../img/ia_100000024.png) no-repeat;
+}
+.content .rubbish_g .neon {
+  position: absolute;
+  top: 3359px;
+  right: 365px;
+  width: 198px;
+  z-index: 11;
+  animation: neon 1s infinite alternate linear;
+  height: 179px;
+  background: url(../img/sprite-67e182_67e182af.png) no-repeat;
+  background-size: 2330px 2053px;
+  background-position: -1586px -1011px;
+}
+.content .rubbish_g .irona {
+  position: absolute;
+  top: 2050px;
+  z-index: 12;
+  width: 1920px;
+  height: 1367px;
+  background: url(../img/ia_100000028.png) no-repeat;
+}
+.content .rubbish_g .ironb {
+  position: absolute;
+  top: 3600px;
+  z-index: 12;
+  width: 1920px;
+  height: 714px;
+  background: url(../img/ia_100000027.png) no-repeat;
+}
+.content .r_left {
+  width: 716px;
+  height: 1449px;
+  background: url(../img/ia_100000035.png) no-repeat;
+  position: absolute;
+  left: 0px;
+  top: 2000px;
+  z-index: 11;
+}
+.content .rainbuild_mid {
+  width: 1413px;
+  height: 1633px;
+  background: url(../img/ia_100000034.png) no-repeat;
+  position: absolute;
+  left: 481px;
+  top: 2100px;
+  z-index: 10;
+}
+.content .r_bot {
+  width: 1920px;
+  height: 3821px;
+  background: url(../img/ia_100000036.png) no-repeat;
+  position: absolute;
+  left: 0;
+  top: 1400px;
+  z-index: 12;
+}
+.content #wave-c {
+  width: 1115px;
+  height: 268px;
+  background: url(../img/ia_100000040.png) no-repeat;
+  position: absolute;
+  left: 450px;
+  top: 2800px;
+}
+.content .rain {
+  width: 1920px;
+  height: 2777px;
+  background: url(../img/ia_100000030.png) no-repeat;
+  position: absolute;
+  top: 1700px;
+}
+.content .rain .wave-wrap {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 20;
+  top: 2750px;
+}
+.content .rain .wave-wrap #wave-b {
+  width: 2287px;
+  height: 779px;
+  animation: 10s infinite wave1;
+  background: url(../img/ia_100000041.png) no-repeat;
+  position: absolute;
+  left: 0px;
+  top: 91px;
+}
+.content .rain .wave-wrap #boat {
+  width: 865px;
+  height: 298px;
+  background: url(../img/ia_100000042.png) no-repeat;
+  position: absolute;
+  left: 250px;
+  animation: infinite 5s boat alternate;
+  top: 150px;
+}
+.content .rain .wave-wrap #wave-a {
+  width: 2288px;
+  height: 797px;
+  background: url(../img/ia_100000043.png) no-repeat;
+  position: absolute;
+  animation: 10s infinite wave2;
+  left: 00px;
+  top: 187px;
+}
+.content .rain .wave-wrap #car {
+  width: 772px;
+  height: 338px;
+  background: url(../img/ia_100000044.png) no-repeat;
+  position: absolute;
+  right: 0px;
+  animation: boat 5s infinite alternate;
+  top: 400px;
+}
+.content .rain .wave-wrap #pole {
+  width: 378px;
+  height: 334px;
+  background: url(../img/sprite-67e182_67e182af.png) no-repeat;
+  background-size: 2330px 2053px;
+  background-position: -1827px -1406px;
+  position: absolute;
+  left: 0px;
+  top: 500px;
+}
+.content .rain .rainimg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(../img/rain-a_9722807c.png) no-repeat;
+  animation: rain infinite .5s;
+  z-index: 10;
+}
+.content .rain .lightbanner,
+.content .rain .lightbanner2,
+.content .rain .lightbanner3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  /*animation: lightbanner 1s;*/
+  z-index: 40;
+}
+.content .rain .light3 {
+  width: 452px;
+  height: 840px;
+  background: url(../img/ia_100000031.png) no-repeat;
+  position: absolute;
+  left: 1000px;
+  top: 1200px;
+  opacity: 0;
+  z-index: 12;
+  /*animation: light infinite 1s;*/
+}
+.content .rain .light1 {
+  width: 511px;
+  height: 949px;
+  background: url(../img/ia_100000032.png) no-repeat;
+  position: absolute;
+  right: 408px;
+  top: 700px;
+  opacity: 0;
+  z-index: 12;
+  /*animation: light infinite 1s;*/
+}
+.content .rain .light2 {
+  width: 463px;
+  height: 1036px;
+  background: url(../img/ia_100000033.png) no-repeat;
+  position: absolute;
+  left: 400px;
+  top: 1000px;
+  opacity: 0;
+  z-index: 12;
+  /*	animation: light infinite 1s;*/
+}
+.content .nav-wrap {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  width: 166px;
+  height: 227px;
+  background: url(../img/nav-bg_3ef538f5.png) 12px top / 8px 227px no-repeat;
+  z-index: 999;
+}
+.content .nav-wrap a {
+  text-decoration: none;
+}
+.content .nav-wrap .btn-audio {
+  background: url(../img/sprite-67e182_67e182af.png) no-repeat;
+  background-size: 2330px 2053px;
+  background-position: -2243px -869px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-top: 48px;
+  margin-left: -4px;
+}
+.content .nav-wrap .nav-btn {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.content .nav-wrap .nav-btn:hover {
+  color: #ff0000;
+}
+.content .nav-wrap .nav-btn:hover::before {
+  background: url(../img/btn-icon_65b1b0ae.png) no-repeat;
+}
+.content .nav-wrap .nav-btn-1 {
+  margin-top: 30px;
+}
+.content .nav-wrap .nav-btn-2 {
+  margin-top: 20px;
+}
+.content .nav-wrap .nav-btn-3 {
+  position: relative;
+  margin-top: 40px;
+}
+.content .nav-wrap .nav-btn-3:hover b {
+  display: none;
+}
+.content .nav-wrap .nav-btn-3:hover img {
+  display: inline-block;
+}
+.content .nav-wrap .nav-btn-3 b {
+  font-weight: normal;
+}
+.content .nav-wrap .nav-btn-3 img {
+  top: -25px;
+  position: absolute;
+  z-index: 100;
+  display: none;
+  height: 71px;
+  width: 71px;
+}
+.content .nav-wrap .nav-btn-4 {
+  margin-top: 40px;
+}
+.content .nav-wrap .nav-btn:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 7px;
+  background: url(../img/btn-icon-1_5f608c5a.png) no-repeat;
+  margin-right: 6px;
+}
+.content .floatimg {
+  position: fixed;
+  display: none;
+  z-index: 100;
+}
+.content .ft1 {
+  top: 290px;
+  left: 140px;
+}
+.content .ft2 {
+  bottom: 290px;
+  right: 140px;
+}
+.sea {
+  position: absolute;
+  top: 4450px;
+  width: 1920px;
+  height: 3000px;
+  overflow: hidden;
+  background: url(../img/ia_100000048.png) no-repeat;
+}
+.sea .lou-4-d {
+  position: absolute;
+  top: 1387px;
+  left: 0;
+  width: 1873px;
+  height: 561px;
+  background: url(../img/ia_100000049.png) no-repeat;
+}
+.sea .lou-4-c {
+  position: absolute;
+  top: 1142px;
+  left: -305px;
+  width: 1677px;
+  height: 992px;
+  background: url(../img/ia_100000051.png) no-repeat;
+}
+.sea .lou-4-b {
+  position: absolute;
+  top: 981px;
+  left: 0;
+  width: 1920px;
+  height: 1523px;
+  background: url(../img/ia_100000054.png) no-repeat;
+}
+.sea .lou-4-a {
+  position: absolute;
+  top: 1530px;
+  left: 0;
+  width: 1920px;
+  height: 1831px;
+  background: url(../img/ia_100000055.png) no-repeat;
+}
+.sea #fish-c {
+  position: absolute;
+  top: 500px;
+  left: 0;
+  width: 733px;
+  height: 277px;
+  background: url(../img/sprite-67e182_67e182af.png) no-repeat;
+  background-size: 2330px 2053px;
+  background-position: 0px -1534px;
+}
+.sea #fish-b {
+  position: absolute;
+  top: 996px;
+  right: 0;
+  width: 414px;
+  height: 235px;
+  transform: scale(1);
+  background: url(../img/sprite-67e182_67e182af.png) no-repeat;
+  background-size: 2330px 2053px;
+  background-position: -737px -1534px;
+}
+.sea #fish-a {
+  position: absolute;
+  top: 2264px;
+  right: 0;
+  width: 711px;
+  height: 335px;
+  background: url(../img/sprite-67e182_67e182af.png) no-repeat;
+  background-size: 2330px 2053px;
+  background-position: -955px -595px;
+}
+.sea #shark-c {
+  position: absolute;
+  top: 672px;
+  left: -305px;
+  width: 359px;
+  height: 238px;
+  background: url(../img/sprite-67e182_67e182af.png) no-repeat;
+  background-size: 2330px 2053px;
+  background-position: 0px -1815px;
+}
+.sea #sink-stone {
+  position: absolute;
+  top: 1053px;
+  left: 600px;
+  width: 769px;
+  height: 415px;
+  background: url(../img/ia_100000062.png) no-repeat;
+}
+.sea #shark-a {
+  position: absolute;
+  top: 1129px;
+  right: -200px;
+  width: 404px;
+  height: 322px;
+  transform: scale(1);
+  background: url(../img/sprite-67e182_67e182af.png) no-repeat;
+  background-size: 2330px 2053px;
+  background-position: -1827px -1080px;
+}
+.sea #sink-boat {
+  position: absolute;
+  top: 1499px;
+  left: 300px;
+  width: 1669px;
+  height: 1853px;
+  background: url(../img/ia_100000058.png) no-repeat;
+}
+.sea #sea-bot {
+  position: absolute;
+  top: 2963px;
+  left: 0;
+  width: 1920px;
+  height: 1382px;
+  background: url(../img/ia_100000059.png) no-repeat;
+}
+.sea .bubble {
+  position: absolute;
+  top: 682px;
+  left: 0px;
+  width: 1870px;
+  height: 5000px;
+  z-index: 10;
+  background: url(../img/ia_100000063.png) repeat-y;
+}
+.sea .girl {
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  width: 226px;
+  height: 156px;
+  z-index: 2;
+}
+.sea .girl .girlself {
+  width: 100%;
+  height: 100%;
+  background: url(../img/sprite-67e182_67e182af.png) no-repeat;
+  background-size: 2330px 2053px;
+  background-position: -1155px -1534px;
+  width: 226px;
+  height: 156px;
+}
+.sea .girl .neckness {
+  width: 926px;
+  height: 590px;
+  position: absolute;
+  top: -237px;
+  left: -311px;
+  -webkit-transform: scale(0.2, 0.2);
+  transform: scale(0.2, 0.2);
+  animation: neon 2s alternate infinite;
+  background: url(../img/sprite-67e182_67e182af.png) no-repeat;
+  background-size: 2330px 2049.5262267343487px;
+  background-position: 0px 0px;
+}
+.sea .boom,
+.sea .boomlight,
+.sea .glass,
+.sea .piece {
+  width: 119.625rem;
+  height: 1342px;
+  position: absolute;
+  bottom: 6.25rem;
+  display: none;
+}
+.sea .boomlight {
+  z-index: 20;
+  background: url(../img/ia_100000066.png);
+}
+.sea .boom {
+  z-index: 21;
+  animation: boom .5s forwards;
+  background: url(../img/ia_100000065.png);
+}
+.sea .glass {
+  bottom: -300px;
+  left: -50px;
+  z-index: 22;
+  animation: glass forwards .5s .1s;
+}
+.sea .piece {
+  z-index: 23;
+  transform: scale(0);
+  animation: piece forwards .5s .8s;
+  background: url(../img/ia_100000068.png);
+}
+.sea .lastarea {
+  display: none;
+  width: 100%;
+  height: 1080px;
+  position: fixed;
+  top: 20px;
+  z-index: 40;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+.sea .lastarea .lastareamove {
+  width: 100%;
+  height: 1080px;
+  position: relative;
+  transform: scale(0);
+  animation: people1 .5s 1.5s forwards;
+}
+.sea .hero1 {
+  position: absolute;
+  left: 320px;
+  top: -40px;
+  width: 950px;
+  height: 332px;
+  z-index: 69;
+  -webkit-transform: scale(0.1, 0.1);
+  transform: scale(0.8, 0.8);
+  transition: all .5s;
+  background: url(../img/ia_100000071.png);
+}
+.sea .hero1:hover {
+  transform: scale(0.75, 0.75);
+}
+.sea .hero1:hover + .heroback1 {
+  transform: scale(0.9);
+}
+.sea .hero1:hover ~ .heroname1l {
+  opacity: 1;
+  transform: translate(130px, -45px);
+}
+.sea .hero1:hover ~ .heroname1r {
+  opacity: 1;
+  transform: translate(170px, -55px);
+}
+.sea .heroname1l {
+  position: absolute;
+  top: 220px;
+  left: 500px;
+  width: 267px;
+  height: 102px;
+  z-index: 100;
+  opacity: 0;
+  transition: all .5s;
+  background: url(../img/ia_100000000133.png);
+  background-size: 100%;
+}
+.sea .heroname1r {
+  position: absolute;
+  top: 220px;
+  left: 500px;
+  width: 224px;
+  height: 79px;
+  opacity: 0;
+  z-index: 100;
+  transform: translate(350px, -100px);
+  transition: all .5s;
+  background: url(../img/ia_100000000132.png) no-repeat;
+  background-size: 100%;
+}
+.sea .shadow1 {
+  position: absolute;
+  width: 950px;
+  height: 332px;
+  z-index: 1;
+  left: 320px;
+  top: -40px;
+  background: url(../img/ia_100000069.png);
+  transform: translate(10px, 10px) scale(0.8, 0.8);
+}
+.sea .heroback1 {
+  position: absolute;
+  width: 950px;
+  height: 332px;
+  z-index: 11;
+  left: 320px;
+  top: -40px;
+  transform: translate(10px, 5px) scale(0.8, 0.8);
+  background: url(../img/ia_100000000131.png);
+  transition: all .5s;
+}
+.sea .hero2 {
+  position: absolute;
+  left: 1052px;
+  top: -40px;
+  width: 400px;
+  height: 325px;
+  z-index: 10;
+  transform: scale(0.8, 0.8);
+  transition: all .5s;
+  background: url(../img/ia_100000076.png);
+}
+.sea .hero2:hover {
+  transform: scale(0.75, 0.75);
+}
+.sea .hero2:hover + .heroback2 {
+  transform: scale(0.9);
+}
+.sea .hero2:hover ~ .heroname2l {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+.sea .hero2:hover ~ .heroname2r {
+  opacity: 1;
+  transform: translate(30px, 0px);
+}
+.sea .heroname2l {
+  position: absolute;
+  left: 1150px;
+  top: 200px;
+  width: 260px;
+  height: 87px;
+  z-index: 100;
+  opacity: 0;
+  transform: translate(-100px, 0);
+  transition: all .5s;
+  background: url(../img/ia_100000000136.png);
+  background-size: 100%;
+}
+.sea .heroname2r {
+  position: absolute;
+  left: 1150px;
+  top: 200px;
+  width: 187px;
+  height: 51px;
+  z-index: 100;
+  opacity: 0;
+  transform: translate(100px, 0);
+  transition: all .5s;
+  background: url(../img/ia_100000000135.png);
+  background-size: 100%;
+}
+.sea .heroback2 {
+  position: absolute;
+  left: 1052px;
+  top: -40px;
+  width: 400px;
+  height: 325px;
+  z-index: 6;
+  transform: translate(10px, 5px) scale(0.8, 0.8);
+  background: url(../img/ia_100000000134.png);
+  transition: all .5s;
+}
+.sea .shadow2 {
+  position: absolute;
+  left: 1100px;
+  top: -40px;
+  width: 400px;
+  height: 325px;
+  background: url(../img/ia_100000074.png);
+  transform: translate(10px, 10px) scale(0.8, 0.8);
+}
+.sea .hero3 {
+  position: absolute;
+  bottom: 261px;
+  left: 447px;
+  width: 502px;
+  height: 455px;
+  z-index: 10;
+  transform: scale(0.8, 0.8);
+  transition: all .5s;
+  background: url(../img/ia_100000081.png);
+}
+.sea .hero3:hover {
+  transform: scale(0.75, 0.75);
+}
+.sea .hero3:hover + .heroback3 {
+  transform: scale(0.9);
+}
+.sea .hero3:hover ~ .heroname3l {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+.sea .hero3:hover ~ .heroname3r {
+  opacity: 1;
+  transform: translate(30px, -30px);
+}
+.sea .heroback3 {
+  position: absolute;
+  bottom: 261px;
+  left: 447px;
+  width: 502px;
+  height: 455px;
+  z-index: 6;
+  transform: translate(10px, 5px) scale(0.8, 0.8);
+  background: url(../img/ia_100000000137.png);
+  transition: all .5s;
+}
+.sea .shadow3 {
+  position: absolute;
+  bottom: 261px;
+  left: 447px;
+  width: 502px;
+  height: 455px;
+  background: url(../img/ia_100000079.png);
+  transform: translate(10px, 10px) scale(0.8, 0.8);
+}
+.sea .heroname3l {
+  position: absolute;
+  bottom: 300px;
+  left: 650px;
+  width: 255px;
+  height: 108px;
+  z-index: 100;
+  opacity: 0;
+  transform: translate(-100px, 0);
+  transition: all .5s;
+  background: url(../img/ia_100000000139.png);
+  background-size: 100%;
+}
+.sea .heroname3r {
+  position: absolute;
+  bottom: 300px;
+  left: 650px;
+  width: 190px;
+  height: 77px;
+  z-index: 100;
+  opacity: 0;
+  transform: translate(100px, 0);
+  transition: all .5s;
+  background: url(../img/ia_100000000138.png);
+  background-size: 100%;
+}
+.sea .hero4 {
+  position: absolute;
+  right: 130px;
+  bottom: 270px;
+  width: 900px;
+  height: 460px;
+  z-index: 10;
+  transform: scale(0.8, 0.8);
+  transition: all .5s;
+  background: url(../img/ia_100000086.png);
+}
+.sea .hero4:hover {
+  transform: scale(0.75, 0.75);
+}
+.sea .hero4:hover + .heroback4 {
+  transform: scale(0.9);
+}
+.sea .hero4:hover ~ .heroname4l {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+.sea .hero4:hover ~ .heroname4r {
+  opacity: 1;
+  transform: translate(0px, 0px) scale(0.8);
+}
+.sea .heroback4 {
+  position: absolute;
+  right: 130px;
+  bottom: 270px;
+  width: 900px;
+  height: 460px;
+  z-index: 6;
+  transform: translate(10px, 5px) scale(0.8, 0.8);
+  background: url(../img/ia_100000000140.png);
+  transition: all .5s;
+}
+.sea .heroname4l {
+  position: absolute;
+  bottom: 300px;
+  right: 500px;
+  width: 255px;
+  height: 108px;
+  z-index: 100;
+  opacity: 0;
+  transform: translate(-100px, 0);
+  transition: all .5s;
+  background: url(../img/ia_100000000142.png);
+  background-size: 100%;
+}
+.sea .heroname4r {
+  position: absolute;
+  bottom: 300px;
+  right: 500px;
+  width: 255px;
+  height: 123px;
+  z-index: 100;
+  opacity: 0;
+  transform: translate(100px, 0) scale(0.8);
+  transition: all .5s;
+  background: url(../img/ia_100000000141.png);
+  background-size: 100%;
+}
+.sea .shadow4 {
+  position: absolute;
+  right: 130px;
+  bottom: 270px;
+  width: 900px;
+  height: 460px;
+  background: url(../img/ia_100000084.png);
+  transform: translate(10px, 10px) scale(0.8, 0.8);
+}
+.sea .footlogo {
+  position: absolute;
+  left: 620px;
+  top: 250px;
+  width: 673px;
+  height: 110px;
+  transform: scale(0.8);
+  z-index: 200;
+  background: url(../img/yxlogo_fd5ec932.png);
+}
+.sea .join {
+  position: absolute;
+  left: 749px;
+  top: 312px;
+  width: 415px;
+  height: 167px;
+  transform: scale(0.8);
+  z-index: 200;
+  cursor: pointer;
+  background-position-y: 0px;
+  background: url(../img/ia_100000099.png) no-repeat;
+}
+.sea .join:hover {
+  background: url(../img/ia_100000000112.png);
+}
+.sea .join .joinus {
+  position: absolute;
+  left: 135px;
+  top: 63px;
+  display: inline-block;
+  width: 166px;
+  height: 49px;
+  background: url(../img/sprite-67e182_67e182af.png) no-repeat;
+  background-size: 2330px 2053px;
+  background-position: -2067px -1744px;
+}
